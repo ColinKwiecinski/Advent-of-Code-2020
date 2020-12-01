@@ -75,6 +75,7 @@ public class DayOne {
             while (scan.hasNext()) {
                 numbers.add(scan.nextInt());
             }
+            scan.close();
         } catch (FileNotFoundException e){
             System.out.println("Error reading file");
             e.printStackTrace();
