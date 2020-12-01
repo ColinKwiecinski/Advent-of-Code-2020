@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 // It ain't pretty but it'll do
@@ -65,7 +66,7 @@ public class DayOne {
         final long end = System.currentTimeMillis();
         return (end - start);
     }
-    
+
     private static ArrayList<Integer> getNumbers() {
         ArrayList<Integer> numbers = new ArrayList<>();
         try {
@@ -78,6 +79,7 @@ public class DayOne {
             System.out.println("Error reading file");
             e.printStackTrace();
         }
+        Collections.sort(numbers);
         return numbers;
     }
 }
