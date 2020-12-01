@@ -50,7 +50,6 @@ public class DayOne {
             }
         }
         return 0;
-
     }
 
     private static long timerOne() throws FileNotFoundException {
@@ -66,8 +65,7 @@ public class DayOne {
         final long end = System.currentTimeMillis();
         return (end - start);
     }
-
-
+    
     private static ArrayList<Integer> getNumbers() {
         ArrayList<Integer> numbers = new ArrayList<>();
         try {
