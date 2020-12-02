@@ -11,17 +11,23 @@ import java.util.Scanner;
  * The result is returning the count of passing passwords in each part given input "input_day2.txt"
  * Part 1: 628 passwords passed
  * Part 2: 705 passwords passed
+ *
+ * Future improvements would be to find a way to consolidate my code to minimize
+ * repeating code blocks.
  */
 public class DayTwo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         new DayTwo().run();
     }
 
+    // Wrote it in this structure because I previously had some fields. This allows me to
+    // make non-static helper methods.
     public void run() {
         System.out.println(getSumPart1());
         System.out.println(getSumPart2());
     }
 
+    // Can assume scanner will not pass null tokens
     private Scanner getScanner() {
         try {
             File passwords = new File("input_day2.txt");
@@ -52,7 +58,7 @@ public class DayTwo {
         String[] range = fragments[0].split("-");
         int min = Integer.parseInt(range[0]);
         int max = Integer.parseInt(range[1]);
-        String ruleChar = fragments[1].split(":")[0];
+        String ruleChar = fragments[1].split(":")[0]; // This could be improved
         int occ = fragments[2].length() - fragments[2].replaceAll(ruleChar, "").length();
         return (occ <= max && occ >= min);
     }
