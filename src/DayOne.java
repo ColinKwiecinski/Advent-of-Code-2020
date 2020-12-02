@@ -70,7 +70,7 @@ public class DayOne {
     private static ArrayList<Integer> getNumbers() {
         ArrayList<Integer> numbers = new ArrayList<>();
         try {
-            File input = new File("input.txt");
+            File input = new File("input_day1.txt");
             Scanner scan = new Scanner(input);
             while (scan.hasNext()) {
                 numbers.add(scan.nextInt());
