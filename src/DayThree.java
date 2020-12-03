@@ -8,19 +8,20 @@ import java.util.Scanner;
  */
 public class DayThree {
     private static final int LINE_LENGTH = 31;
+    private static final String INPUT_FILE = "input_day3.txt";
 
     public static void main(String[] args) {
         System.out.println(countTrees(3, 1)); // Part 1
         System.out.println(combineSlopes()); // Part 2
     }
-    
+
     private static int combineSlopes() {
         return (countTrees(1,1) * countTrees(3, 1) *
                 countTrees(5, 1) * countTrees(7, 1) * countTrees(1, 2));
     }
 
     private static int countTrees(int lateral, int vertical) {
-        Scanner input = new FileReader("input_day3.txt").getScanner();
+        Scanner input = new FileReader(INPUT_FILE).getScanner();
         int sum = 0;
         int column = 0;
         while (input.hasNextLine()) {
