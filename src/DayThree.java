@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/**
+ * Day 3 - Toboggan Trajectory
+ * Solving a traversal of various vertical and horizontal shifts and counting the instances
+ * of a character when making the shift. Wrap around to the start of the line if hit end of line.
+ * Required File: input_day3.txt
+ */
 public class DayThree {
     private static final int LINE_LENGTH = 31;
 
@@ -7,7 +13,7 @@ public class DayThree {
         System.out.println(countTrees(3, 1)); // Part 1
         System.out.println(combineSlopes()); // Part 2
     }
-
+    
     private static int combineSlopes() {
         return (countTrees(1,1) * countTrees(3, 1) *
                 countTrees(5, 1) * countTrees(7, 1) * countTrees(1, 2));
