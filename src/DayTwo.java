@@ -52,7 +52,7 @@ public class DayTwo {
     }
 
     // Tests if there at least min number of occurrences and less than max occurrences
-    // Quantifier test. X{min,max}?
+    // This could be factored out by making a parse method that returns a String[]
     private boolean testPasswordPart1(String str) {
         String[] fragments = str.split(" ");
         String[] range = fragments[0].split("-");
