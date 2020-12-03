@@ -32,12 +32,7 @@ public class DayThree {
             if (row.charAt(column) == '#') { // Testing at the end of a shift
                 sum++;
             }
-            for (int i = 0; i < lateral; i++) { // Over lateral
-                column++;
-                if (column >= LINE_LENGTH) {
-                    column = 0;
-                }
-            }
+            column = (column + lateral) % LINE_LENGTH; // Took this from Greg's solution
         }
         return sum;
     }
