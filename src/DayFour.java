@@ -28,12 +28,12 @@ public class DayFour {
             // Cid can be ignored, hence this initial test. Validity is at least 7 valid pairs, exl cid
             if (passport.size() == 8 || (passport.size() == 7 & !passport.containsKey("cid"))) {
                 if (testYear(Integer.parseInt(passport.get("byr")), 1920, 2002) &&
-                    testYear(Integer.parseInt(passport.get("iyr")), 2010, 2020) &&
-                    testYear(Integer.parseInt(passport.get("eyr")), 2020, 2030) &&
-                    testHeight(passport.get("hgt")) &&
-                    testHcl(passport.get("hcl")) &&
-                    testEcl(passport.get("ecl")) &&
-                    testPid(passport.get("pid"))
+                        testYear(Integer.parseInt(passport.get("iyr")), 2010, 2020) &&
+                        testYear(Integer.parseInt(passport.get("eyr")), 2020, 2030) &&
+                        testHeight(passport.get("hgt")) &&
+                        testHcl(passport.get("hcl")) &&
+                        testEcl(passport.get("ecl")) &&
+                        testPid(passport.get("pid"))
                 ) sum++;
             }
         }
