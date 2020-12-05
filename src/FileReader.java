@@ -6,7 +6,6 @@ import java.util.Scanner;
  * This class is so I don't have to keep copy pasting my File and Scanner
  * method to read each input text file.
  */
-
 public class FileReader {
     private String source;
 
@@ -23,9 +22,5 @@ public class FileReader {
             e.printStackTrace();
         }
         return null;
-    }
-
-    public void setSource(String str) {
-        source = str;
     }
 }

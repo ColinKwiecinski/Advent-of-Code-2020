@@ -12,7 +12,7 @@ import java.util.Scanner;
  * Answers for my input were 901 for highest seatID and 661 for the missing seat.
  */
 public class Day5 {
-    private static final String INPUT_FILE = "input_day5.txt";
+    private static final String INPUT_FILE = "in/input_day5.txt";
 
     public static void main(String[] args) {
         System.out.println("Highest Seat ID: " + findSeat());
@@ -27,7 +27,7 @@ public class Day5 {
             max = Math.max(max, nextId);
             seatIDs.add(nextId);
         }
-        
+
         // Find missing seat using n*(n+1)/2 sum logic
         Collections.sort(seatIDs); // More runtime intensive but simpler to code
         int sum = 0;

@@ -7,9 +7,11 @@ import java.util.Scanner;
  * key value pairs. Processing included parsing by groups of pairs, and then splitting each
  * pairing into its key values. Then testing if each pairing meets a set of conditions for
  * validity. Outputs the number of valid passports for a given input file.
+ * Part 1 Testing how many passports contained the right number of fields. Answer: 222
+ * Part 2 Testing how many passports met all validity conditions. Answer: 140
  */
 public class Day4 {
-    private static final String INPUT_FILE = "input_day4.txt";
+    private static final String INPUT_FILE = "in/input_day4.txt";
 
     public static void main(String[] args) {
         System.out.println(countValid());

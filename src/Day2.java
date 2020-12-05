@@ -1,5 +1,3 @@
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
@@ -16,6 +14,8 @@ import java.util.Scanner;
  * repeating code blocks.
  */
 public class Day2 {
+    private static final String INPUT_FILE = "in/input_day2.txt";
+
     public static void main(String[] args) {
         new Day2().run();
     }
@@ -27,20 +27,8 @@ public class Day2 {
         System.out.println(getSumPart2());
     }
 
-    // Can assume scanner will not pass null tokens
-    private Scanner getScanner() {
-        try {
-            File passwords = new File("input_day2.txt");
-            return new Scanner(passwords);
-        } catch (FileNotFoundException e) {
-            System.out.println("Error reading file");
-            e.printStackTrace();
-        }
-        return null;
-    }
-
     private int getSumPart1() {
-        Scanner input = getScanner();
+        Scanner input = new FileReader(INPUT_FILE).getScanner();
         int count = 0;
         while (input.hasNext()) {
             if (testPasswordPart1(input.nextLine())) {
@@ -64,7 +52,7 @@ public class Day2 {
     }
 
     private int getSumPart2() {
-        Scanner input = getScanner();
+        Scanner input = new FileReader(INPUT_FILE).getScanner();
         int count = 0;
         while (input.hasNext()) {
             if (testPasswordPart2(input.nextLine())) {

@@ -5,10 +5,11 @@ import java.util.Scanner;
  * Solving a traversal of various vertical and horizontal shifts and counting the instances
  * of a character when making the shift. Wrap around to the start of the line if hit end of line.
  * Required File: input_day3.txt
+ * Part 1 Answer: 167, Part 2 Answer: 736527114
  */
 public class Day3 {
     private static final int LINE_LENGTH = 31;
-    private static final String INPUT_FILE = "input_day3.txt";
+    private static final String INPUT_FILE = "in/input_day3.txt";
 
     public static void main(String[] args) {
         System.out.println(countTrees(3, 1)); // Part 1
