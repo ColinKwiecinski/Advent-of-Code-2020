@@ -15,9 +15,9 @@ import java.util.Scanner;
  * Future improvements would be to find a way to consolidate my code to minimize
  * repeating code blocks.
  */
-public class DayTwo {
+public class Day2 {
     public static void main(String[] args) {
-        new DayTwo().run();
+        new Day2().run();
     }
 
     // Wrote it in this structure because I previously had some fields. This allows me to

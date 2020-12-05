@@ -6,7 +6,7 @@ import java.util.Scanner;
  * of a character when making the shift. Wrap around to the start of the line if hit end of line.
  * Required File: input_day3.txt
  */
-public class DayThree {
+public class Day3 {
     private static final int LINE_LENGTH = 31;
     private static final String INPUT_FILE = "input_day3.txt";
 

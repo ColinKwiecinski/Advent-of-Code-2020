@@ -8,7 +8,7 @@ import java.util.Scanner;
  * pairing into its key values. Then testing if each pairing meets a set of conditions for
  * validity. Outputs the number of valid passports for a given input file.
  */
-public class DayFour {
+public class Day4 {
     private static final String INPUT_FILE = "input_day4.txt";
 
     public static void main(String[] args) {

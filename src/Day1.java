@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 // It ain't pretty but it'll do
-public class DayOne {
+public class Day1 {
     public static void main(String args[]) throws FileNotFoundException {
         System.out.println("Two numbers runtime: " + timerOne());
         System.out.println("Three numbers runtime: " + timerTwo());
