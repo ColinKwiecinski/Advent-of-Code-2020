@@ -13,12 +13,10 @@ public class Day5 {
         while (input.hasNextLine()) {
             max = Math.max(max, getRow(input.nextLine(), 0, 127));
         }
-//        System.out.println(getRow("FBFBBFFRLR", 0, 127));
         return max;
     }
 
     private static int getRow(String str, int min, int max) {
-        System.out.println("breakpoint row placeholder");
         if (str.length() == 3) {
             return min * 8 + getCol(str, 0, 7);
         }
@@ -32,7 +30,6 @@ public class Day5 {
     }
 
     private static int getCol(String str, int min, int max) {
-        System.out.println("breakpoint col placeholder");
         if (str.length() == 0) {
             return min;
         }
