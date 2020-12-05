@@ -34,6 +34,7 @@ public class Day5 {
         for (int i : seatIDs) sum += i; // Finding real sum to compare to predicted sum
         int missing = (max * (max + 1) / 2) - sum - ((seatIDs.get(0) - 1) * seatIDs.get(0) / 2);
         System.out.println("Missing Seat: " + missing);
+        input.close();
         return max;
     }
 

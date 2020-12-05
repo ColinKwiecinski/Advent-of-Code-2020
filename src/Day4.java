@@ -52,6 +52,7 @@ public class Day4 {
                 ) sum++;
             }
         }
+        input.close();
         return sum;
     }
 

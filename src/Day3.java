@@ -35,6 +35,7 @@ public class Day3 {
             }
             column = (column + lateral) % LINE_LENGTH; // Took this from Greg's solution
         }
+        input.close();
         return sum;
     }
 }
