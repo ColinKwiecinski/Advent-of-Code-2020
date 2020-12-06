@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-
 public class Day1 {
     private static final String INPUT_FILE = "in/input_day1.txt";
 
