@@ -9,9 +9,7 @@ public class Template {
 
     private static int getAnswer() {
         Scanner input = new FileReader(INPUT_FILE).getScanner();
-
         // Do code here
-
         return -1;
     }
 }
